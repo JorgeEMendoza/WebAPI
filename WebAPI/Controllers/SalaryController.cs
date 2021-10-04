@@ -18,6 +18,6 @@ namespace WebAPI.Controllers
 
         [HttpGet]
         [Route("SalaryByEmployeeId/{EmployeeId}")]
-        public async Task<EmployeeSalary> GetSalaryByEmployeeId(int EmployeeID) => await _employeeSalaryService.GetEmployeeSalaryByEmployeeIdAsync(EmployeeID);
+        public async Task<EmployeeSalary> GetSalaryByEmployeeId(int EmployeeId) => await _employeeSalaryService.GetEmployeeSalaryByEmployeeIdAsync(EmployeeId);
     }
 }

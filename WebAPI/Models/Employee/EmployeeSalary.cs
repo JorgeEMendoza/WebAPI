@@ -10,5 +10,7 @@ namespace WebAPI.Models.Employee
         public int EId { get; set; }
         public DateTime HireDate { get; set; }
         public int Salary { get; set; }
+
+        public Employee Employee { get; set; }
     }
 }
