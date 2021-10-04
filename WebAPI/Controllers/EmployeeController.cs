@@ -19,15 +19,15 @@ namespace WebAPI.Controllers
 
         [HttpGet]
         [Route("Employee/{empID}")]
-        public async Task<Employee_Main> GetEmployeeById(int empID) => await Task.Run(() => { return _employeeService.GetEmployeeAsync(empID); });
+        public async Task<Employee> GetEmployeeById(int empID) => await Task.Run(() => { return _employeeService.GetEmployeeAsync(empID); });
 
         [HttpGet]
         [Route("Employees")]
-        public async Task<IReadOnlyCollection<Employee_Main>> GetAllEmployees() => await Task.Run(() => { return _employeeService.GetAllEmployeesAsync(); });
+        public async Task<IReadOnlyCollection<Employee>> GetAllEmployees() => await Task.Run(() => { return _employeeService.GetAllEmployeesAsync(); });
 
         [HttpGet]
         [Route("Get10RandomEmployees")]
-        public async Task<List<Employee_Main>> GetSomeEmployees() => await Task.Run(() => { return _employeeService.GetRandomEmployeesAsync(10); });
+        public async Task<List<Employee>> GetSomeEmployees() => await Task.Run(() => { return _employeeService.GetRandomEmployeesAsync(10); });
         
     }
 }

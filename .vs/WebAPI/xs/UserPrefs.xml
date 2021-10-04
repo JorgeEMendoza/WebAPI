@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{29EB1AA3-B320-4F8F-968F-4540F05EFAA3}|Default">
+  <MonoDevelop.Ide.ItemProperties.WebAPI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebAPI/Repositories/Implementations/EmployeeRepoImp.cs">
+    <Files>
+      <File FileName="WebAPI/Startup.cs" Line="44" Column="61" />
+      <File FileName="WebAPI/Repositories/Implementations/EmployeeSalaryRepoImp.cs" Line="21" Column="49" />
+      <File FileName="WebAPI/Repositories/Implementations/EmployeeRepoImp.cs" Line="16" Column="10" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WebAPI" expanded="True">
+            <Node name="WebAPI" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Context" expanded="True" />
+                <Node name="Employee" expanded="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Repositories" expanded="True">
+                <Node name="Contracts" expanded="True" />
+                <Node name="Implementations" expanded="True">
+                  <Node name="EmployeeRepoImp.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Services" expanded="True">
+                <Node name="Contracts" expanded="True" />
+                <Node name="Implementations" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

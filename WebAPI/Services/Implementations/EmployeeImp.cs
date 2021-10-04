@@ -17,14 +17,14 @@ namespace WebAPI.Services.Implementations
             _empRepo = empRepo;
         }
 
-        public async Task<Employee_Main> GetEmployeeAsync(int employeeID) => await _empRepo.GetById(employeeID);
+        public async Task<Employee> GetEmployeeAsync(int employeeID) => await _empRepo.GetById(employeeID);
 
-        public async Task<IReadOnlyCollection<Employee_Main>> GetAllEmployeesAsync() => await _empRepo.GetAllEmployees();
+        public async Task<IReadOnlyCollection<Employee>> GetAllEmployeesAsync() => await _empRepo.GetAllEmployees();
 
-        public async Task<List<Employee_Main>> GetRandomEmployeesAsync(int numberOfRandomEmployees)
+        public async Task<List<Employee>> GetRandomEmployeesAsync(int numberOfRandomEmployees)
         {
             var rand = new Random();
-            List<Employee_Main> employees = await _empRepo.GetAllEmployees();
+            List<Employee> employees = await _empRepo.GetAllEmployees();
 
             return employees.OrderBy(x => rand.Next()).Take(numberOfRandomEmployees).ToList();
         }

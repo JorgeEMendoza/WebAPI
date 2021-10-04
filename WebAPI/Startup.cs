@@ -38,9 +38,13 @@ namespace WebAPI
             services.
                 AddDbContext<SQLDBContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly(typeof(SQLDBContext).Assembly.FullName))).
-                AddScoped<IEmployee, EmployeeImp>().
                 AddScoped(typeof(IRepository<>), typeof(RepositoryImp<>)).
-                AddScoped<IEmployeeRepo, EmployeeRepoImp>();
+
+                AddScoped<IEmployee, EmployeeImp>().
+                AddScoped<IEmployeeRepo, EmployeeRepoImp>().
+
+                AddScoped<IEmployeeSalary, EmployeeSalaryImp>().
+                AddScoped<IEmployeeSalaryRepo, EmployeeSalaryRepoImp>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -10,7 +10,8 @@ namespace WebAPI.Models.Context
             
         }
 
-        public DbSet<Employee_Main> Employee_Main { get; set; }
+        public DbSet<Employee.Employee> Employee { get; set; }
+        public DbSet<EmployeeSalary> EmployeeSalary { get; set; }
 
     }
 }

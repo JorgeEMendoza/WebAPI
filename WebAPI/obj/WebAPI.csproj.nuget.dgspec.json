@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "\\\\Mac\\Home\\Desktop\\WebAPI\\WebAPI\\WebAPI.csproj": {}
+    "/home/jorge/Desktop/WebAPI/WebAPI/WebAPI.csproj": {}
   },
   "projects": {
-    "\\\\Mac\\Home\\Desktop\\WebAPI\\WebAPI\\WebAPI.csproj": {
+    "/home/jorge/Desktop/WebAPI/WebAPI/WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\Mac\\Home\\Desktop\\WebAPI\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "/home/jorge/Desktop/WebAPI/WebAPI/WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "\\\\Mac\\Home\\Desktop\\WebAPI\\WebAPI\\WebAPI.csproj",
-        "packagesPath": "C:\\Users\\jem\\.nuget\\packages\\",
-        "outputPath": "\\\\Mac\\Home\\Desktop\\WebAPI\\WebAPI\\obj\\",
+        "projectPath": "/home/jorge/Desktop/WebAPI/WebAPI/WebAPI.csproj",
+        "packagesPath": "/home/jorge/.nuget/packages/",
+        "outputPath": "/home/jorge/Desktop/WebAPI/WebAPI/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\jem\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/home/jorge/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -87,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.112\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.412/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,19 +1,15 @@
-﻿namespace WebAPI.Models.Employee
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+
+namespace WebAPI.Models.Employee
 {
     public class Employee
     {
-        public int ID { get; set; }
-
+        [Key]
+        public int Id { get; set; }
         public string FirstName { get; set; }
-
         public string LastName { get; set; }
-
-        public Employee()
-        {
-            this.ID = 1;
-            this.FirstName = "Jorge";
-            this.LastName = "Mendoza";
-
-        }
+        public DateTime BirthDate { get; set; }
+        public string PhoneNumber { get; set; }
     }
 }

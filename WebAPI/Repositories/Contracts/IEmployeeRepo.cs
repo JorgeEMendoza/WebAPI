@@ -4,10 +4,10 @@ using WebAPI.Models.Employee;
 
 namespace WebAPI.Repositories.Contracts
 {
-    public interface IEmployeeRepo : IRepository<Employee_Main>
+    public interface IEmployeeRepo : IRepository<Employee>
     {
-        public Task<List<Employee_Main>> GetAllEmployees();
+        public Task<List<Employee>> GetAllEmployees();
 
-        public Task<IReadOnlyCollection<Employee_Main>> GetSomeEmployees();
+        public Task<IReadOnlyCollection<Employee>> GetSomeEmployees();
     }
 }
