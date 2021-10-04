@@ -1,5 +1,4 @@
-﻿using System;
-using WebAPI.Models.Context;
+﻿using WebAPI.Models.Context;
 using WebAPI.Repositories.Contracts;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -17,18 +16,18 @@ namespace WebAPI.Repositories.Implementations
             _context = context;
         }
 
-        public async Task<EmployeeSalary> GetEmployeeSalaryByEmployeeIdAsync(int EmployeeId) => await Task.Run(() => {
+        public async Task<EmployeeSalary> GetEmployeeSalaryByEmployeeIdAsync(int employeeId) => await Task.Run(() => {
             var employeeSalaryData = (from es in _context.EmployeeSalary
                                      join e in _context.Employee on es.EId equals e.Id
-                                     where es.EId == EmployeeId
-                                     select new { Id = es.Id, 
-                                         HireDate = es.HireDate, 
-                                         Salary = es.Salary, 
-                                         EId = es.EId,
-                                         FirstName = e.FirstName,
-                                         LastName = e.LastName,
-                                         BirthDate = e.BirthDate,
-                                         PhoneNumber = e.PhoneNumber
+                                     where es.EId == employeeId
+                                     select new { es.Id, 
+                                         es.HireDate, 
+                                         es.Salary, 
+                                         es.EId,
+                                         e.FirstName,
+                                         e.LastName,
+                                         e.BirthDate,
+                                         e.PhoneNumber
                                      }).FirstOrDefault();
 
             EmployeeSalary data = new EmployeeSalary()

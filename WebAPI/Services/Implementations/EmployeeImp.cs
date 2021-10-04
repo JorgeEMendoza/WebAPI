@@ -17,7 +17,7 @@ namespace WebAPI.Services.Implementations
             _empRepo = empRepo;
         }
 
-        public async Task<Employee> GetEmployeeAsync(int employeeID) => await _empRepo.GetById(employeeID);
+        public async Task<Employee> GetEmployeeAsync(int employeeId) => await _empRepo.GetById(employeeId);
 
         public async Task<IReadOnlyCollection<Employee>> GetAllEmployeesAsync() => await _empRepo.GetAllEmployees();
 

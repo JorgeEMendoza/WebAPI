@@ -4,8 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using WebAPI.Models.Employee;
 using WebAPI.Services.Contracts;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace WebAPI.Controllers
 {
     public class EmployeeController : Controller
@@ -18,16 +16,16 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet]
-        [Route("Employee/{empID}")]
-        public async Task<Employee> GetEmployeeById(int empID) => await Task.Run(() => { return _employeeService.GetEmployeeAsync(empID); });
+        [Route("Employee/{empId:int}")]
+        public async Task<Employee> GetEmployeeById(int empId) => await Task.Run(() => _employeeService.GetEmployeeAsync(empId) );
 
         [HttpGet]
         [Route("Employees")]
-        public async Task<IReadOnlyCollection<Employee>> GetAllEmployees() => await Task.Run(() => { return _employeeService.GetAllEmployeesAsync(); });
+        public async Task<IReadOnlyCollection<Employee>> GetAllEmployees() => await Task.Run(() => _employeeService.GetAllEmployeesAsync() );
 
         [HttpGet]
         [Route("Get10RandomEmployees")]
-        public async Task<List<Employee>> GetSomeEmployees() => await Task.Run(() => { return _employeeService.GetRandomEmployeesAsync(10); });
+        public async Task<List<Employee>> GetSomeEmployees() => await Task.Run(() => _employeeService.GetRandomEmployeesAsync(10) );
         
     }
 }

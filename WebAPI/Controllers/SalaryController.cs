@@ -1,7 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using WebAPI.Models.Employee;
 using WebAPI.Services.Contracts;
 
@@ -17,7 +15,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet]
-        [Route("SalaryByEmployeeId/{EmployeeId}")]
-        public async Task<EmployeeSalary> GetSalaryByEmployeeId(int EmployeeId) => await _employeeSalaryService.GetEmployeeSalaryByEmployeeIdAsync(EmployeeId);
+        [Route("SalaryByEmployeeId/{employeeId:int}")]
+        public async Task<EmployeeSalary> GetSalaryByEmployeeId(int employeeId) => await _employeeSalaryService.GetEmployeeSalaryByEmployeeIdAsync(employeeId);
     }
 }

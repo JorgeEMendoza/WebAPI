@@ -13,6 +13,6 @@ namespace WebAPI.Repositories.Implementations
             _context = context;
         }
 
-        public async Task<T> GetById(int ID) => await Task.Run(() => { return _context.Set<T>().Find(ID); });
+        public async Task<T> GetById(int ID) => await Task.Run(() => _context.Set<T>().Find(ID));
     }
 }

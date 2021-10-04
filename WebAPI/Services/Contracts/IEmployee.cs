@@ -6,7 +6,7 @@ namespace WebAPI.Services.Contracts
 {
     public interface IEmployee
     {
-        public Task<Employee> GetEmployeeAsync(int employeeID);
+        public Task<Employee> GetEmployeeAsync(int employeeId);
 
         public Task<IReadOnlyCollection<Employee>> GetAllEmployeesAsync();
 

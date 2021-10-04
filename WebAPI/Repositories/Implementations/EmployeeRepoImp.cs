@@ -12,12 +12,12 @@ namespace WebAPI.Repositories.Implementations
     {
         private readonly SQLDBContext _context;
 
-        public EmployeeRepoImp(SQLDBContext _context) : base(_context)
+        public EmployeeRepoImp(SQLDBContext context) : base(context)
         {
-            this._context = _context;
+            this._context = context;
         }
 
-        public async Task<List<Employee>> GetAllEmployees() => await Task.Run(() => { return _context.Set<Employee>().ToList(); } );
+        public async Task<List<Employee>> GetAllEmployees() => await Task.Run(() =>  _context.Set<Employee>().ToList() );
 
         public Task<IReadOnlyCollection<Employee>> GetSomeEmployees()
         {
