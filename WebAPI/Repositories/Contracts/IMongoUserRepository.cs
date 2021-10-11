@@ -7,5 +7,6 @@ namespace WebAPI.Repositories.Contracts
     public interface IMongoUserRepository
     {
         public Task<List<User>> GetUsersAsync();
+        public Task<User> GetUserByName(string name);
     }
 }

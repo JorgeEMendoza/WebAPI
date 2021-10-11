@@ -16,5 +16,7 @@ namespace WebAPI.Services.Implementations
         }
 
         public async Task<List<User>> GetUsersAsync() => await _mongoUserRepository.GetUsersAsync();
+
+        public async Task<User> GetUserByName(string name) => await _mongoUserRepository.GetUserByName(name);
     }
 }

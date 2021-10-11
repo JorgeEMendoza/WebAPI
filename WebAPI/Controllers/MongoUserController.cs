@@ -18,5 +18,9 @@ namespace WebAPI.Controllers
         [HttpGet]
         [Route("MongoUser/GetUsers")]
         public async Task<List<User>> GetUsersAsync() => await _mongoUser.GetUsersAsync();
+
+        [HttpPost]
+        [Route("MongoUser/GetUserByName")]
+        public async Task<User> GetUserByName([FromBody] UserRequest user) => await _mongoUser.GetUserByName(user.Name);
     }
 }
