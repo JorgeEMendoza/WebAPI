@@ -6,7 +6,7 @@ using WebAPI.Services.Contracts;
 
 namespace WebAPI.Controllers
 {
-    public class MongoUserController
+    public class MongoUserController : Controller
     {
         private readonly IMongoUser _mongoUser;
 
