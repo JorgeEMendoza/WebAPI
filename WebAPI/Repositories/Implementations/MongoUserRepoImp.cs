@@ -43,8 +43,7 @@ namespace WebAPI.Repositories.Implementations
 
         public async Task<User> GetUserByName(string name)
         {
-            var filter = Filter.Eq("name", name);
-            var userInDb = await _collection.Find(new BsonDocument("name", name)).FirstAsync();
+            var userInDb = await _collection.Find(x => x.name == name).FirstAsync();
             var user = new User
             {
                 Id = userInDb._id.ToString(),
