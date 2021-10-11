@@ -44,7 +44,10 @@ namespace WebAPI
                 AddScoped<IEmployeeRepo, EmployeeRepoImp>().
 
                 AddScoped<IEmployeeSalary, EmployeeSalaryImp>().
-                AddScoped<IEmployeeSalaryRepo, EmployeeSalaryRepoImp>();
+                AddScoped<IEmployeeSalaryRepo, EmployeeSalaryRepoImp>().
+                
+                AddScoped<IMongoUser, MongoUserImp>().
+                AddScoped<IMongoUserRepository, MongoUserRepoImp>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
