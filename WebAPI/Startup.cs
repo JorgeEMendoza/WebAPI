@@ -16,6 +16,11 @@ using WebAPI.Repositories.Contracts;
 using WebAPI.Repositories.Implementations;
 using WebAPI.Services.Contracts;
 using WebAPI.Services.Implementations;
+using WebAPI.Controllers;
+using Microsoft.OpenApi.Models;
+using System.Text.Json.Serialization;
+using WebAPI.DataMapping.Contracts;
+using WebAPI.DataMapping.Implementations;
 
 namespace WebAPI
 {
@@ -33,14 +38,31 @@ namespace WebAPI
         {
             services.AddControllers();
 
-            services.AddSwaggerGen();
-
             services.
                 AddDbContext<SQLDBContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly(typeof(SQLDBContext).Assembly.FullName))).
-                AddScoped<IEmployee, EmployeeImp>().
+                AddScoped<IEmployeeService, EmployeeServiceImp>().
                 AddScoped(typeof(IRepository<>), typeof(RepositoryImp<>)).
-                AddScoped<IEmployeeRepo, EmployeeRepoImp>();
+                AddScoped<IEmployeeRepo, EmployeeRepoImp>().
+                AddSingleton<IEmployeeMapper, EmployeeMapper>();
+
+            // Swagger
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc(RoutingHelpers.APIVersion, new OpenApiInfo { Title = "Courses", Version = RoutingHelpers.APIVersion });
+            });
+
+            services.AddApiVersioning(o =>
+            {
+                o.AssumeDefaultVersionWhenUnspecified = true;
+                o.DefaultApiVersion = new ApiVersion(1, 0);
+            });
+
+            services.AddMvc().AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+                options.JsonSerializerOptions.IgnoreNullValues = true;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,8 +76,7 @@ namespace WebAPI
 
                 app.UseSwaggerUI(c =>
                 {
-                    c.SwaggerEndpoint("/swagger/v1/swagger.json","My API v1");
-                    c.RoutePrefix = string.Empty;
+                    c.SwaggerEndpoint($"/swagger/{RoutingHelpers.APIVersion}/swagger.json","Employees API");
                 });
 
             }

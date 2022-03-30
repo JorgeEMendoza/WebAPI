@@ -9,5 +9,7 @@ namespace WebAPI.Repositories.Contracts
         public Task<List<Employee_Main>> GetAllEmployees();
 
         public Task<IReadOnlyCollection<Employee_Main>> GetSomeEmployees();
+
+        public Task Create(Employee_Main employee);
     }
 }

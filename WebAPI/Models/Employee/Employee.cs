@@ -15,5 +15,11 @@
             this.LastName = "Mendoza";
 
         }
+
+        public Employee(string fName, string lName)
+        {
+            this.FirstName = fName;
+            this.LastName = lName;
+        }
     }
 }

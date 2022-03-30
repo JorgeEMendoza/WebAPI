@@ -10,9 +10,9 @@ namespace WebAPI.Models.Employee
     {
         [Key]
         public int Emp_ID { get; set; }
-        public string EMP_FirsrName { get; set; }
+        public string EMP_FirstName { get; set; }
         public string EMP_LastName { get; set; }
-        public DateTime EMP_BirthDate { get; set; }
+        public DateTime? EMP_BirthDate { get; set; }
         public string EMP_PhoneNumber { get; set; }
         public string EMP_Address { get; set; }
     }

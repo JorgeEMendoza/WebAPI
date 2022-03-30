@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,11 +9,11 @@ using WebAPI.Services.Contracts;
 
 namespace WebAPI.Services.Implementations
 {
-    public class EmployeeImp : IEmployee
+    public class EmployeeServiceImp : IEmployeeService
     {
         private readonly IEmployeeRepo _empRepo;
 
-        public EmployeeImp(IEmployeeRepo empRepo)
+        public EmployeeServiceImp(IEmployeeRepo empRepo)
         {
             _empRepo = empRepo;
         }
@@ -28,5 +29,7 @@ namespace WebAPI.Services.Implementations
 
             return employees.OrderBy(x => rand.Next()).Take(numberOfRandomEmployees).ToList();
         }
+
+        public async Task Create(Employee_Main employee) => await _empRepo.Create(employee);
     }
 }
