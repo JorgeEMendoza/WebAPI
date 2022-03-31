@@ -12,7 +12,4 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets Condition=" '$(PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets)' == '' ">C:\Users\jem\.nuget\packages\microsoft.visualstudio.azure.containers.tools.targets\1.9.10</PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets>
-  </PropertyGroup>
 </Project>

@@ -1,15 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using WebAPI.Models;
+using WebAPI.Data.EF.Models;
 
-namespace WebAPI.Repositories.Contracts
+namespace WebAPI.Repositories
 {
-    public interface IEmployeeRepo : IRepository<Employee>
+    public interface IEmployeeRepo
     {
-        public Task<List<Employee>> GetAllEmployees();
+        public Task<EmployeeDataModel> GetEmployeeById(int employeeId);
+        public Task<IReadOnlyCollection<EmployeeDataModel>> GetAllEmployees();
 
-        public Task<IReadOnlyCollection<Employee>> GetSomeEmployees();
+        public Task<IReadOnlyCollection<EmployeeDataModel>> GetSomeEmployees();
 
-        public Task Create(Employee employee);
+        public Task Create(EmployeeDataModel employee);
     }
 }

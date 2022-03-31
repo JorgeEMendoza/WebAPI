@@ -1,10 +1,8 @@
-﻿using System.Threading.Tasks;
-using WebAPI.Models.Context;
-using WebAPI.Repositories.Contracts;
+﻿using WebAPI.Models.Context;
 
 namespace WebAPI.Repositories.Implementations
 {
-    public class RepositoryImp<T> : IRepository<T> where T : class
+    public class RepositoryImp<T>
     {
         private readonly SQLDBContext _context;
 
@@ -12,7 +10,5 @@ namespace WebAPI.Repositories.Implementations
         {
             _context = context;
         }
-
-        public async Task<T> GetById(int ID) => await Task.Run(() => { return _context.Set<T>().Find(ID); });
     }
 }

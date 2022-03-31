@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using WebAPI.Data.EF.Models;
 
 namespace WebAPI.Models.Context
 {
@@ -9,7 +10,7 @@ namespace WebAPI.Models.Context
             
         }
 
-        public DbSet<Employee> Employee { get; set; }
+        public DbSet<EmployeeDataModel> Employee { get; set; }
 
     }
 }

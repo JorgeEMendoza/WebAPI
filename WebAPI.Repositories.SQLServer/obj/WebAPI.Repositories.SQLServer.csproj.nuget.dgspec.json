@@ -22,14 +22,14 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netstandard2.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "netstandard2.0": {
             "projectReferences": {}
           }
         },
@@ -40,11 +40,13 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "netstandard2.0": {
           "dependencies": {
-            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[1.9.10, )"
+              "version": "[2.0.3, )",
+              "autoReferenced": true
             }
           },
           "imports": [
@@ -57,26 +59,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.112\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Employee.Models\\WebAPI.Models.csproj": {
+    "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Models\\WebAPI.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Employee.Models\\WebAPI.Models.csproj",
+        "projectUniqueName": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Models\\WebAPI.Models.csproj",
         "projectName": "WebAPI.Models",
-        "projectPath": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Employee.Models\\WebAPI.Models.csproj",
+        "projectPath": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Models\\WebAPI.Models.csproj",
         "packagesPath": "C:\\Users\\jem\\.nuget\\packages\\",
-        "outputPath": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Employee.Models\\obj\\",
+        "outputPath": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -87,14 +81,14 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netstandard2.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "netstandard2.0": {
             "projectReferences": {}
           }
         },
@@ -105,17 +99,13 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "netstandard2.0": {
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[3.1.23, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.23, )"
+              "version": "[2.0.3, )",
+              "autoReferenced": true
             }
           },
           "imports": [
@@ -128,14 +118,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.112\\RuntimeIdentifierGraph.json"
         }
       }
@@ -167,8 +149,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Employee.Models\\WebAPI.Models.csproj": {
-                "projectPath": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Employee.Models\\WebAPI.Models.csproj"
+              "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Models\\WebAPI.Models.csproj": {
+                "projectPath": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Models\\WebAPI.Models.csproj"
               },
               "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Repositories\\WebAPI.Repositories.csproj": {
                 "projectPath": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Repositories\\WebAPI.Repositories.csproj"
@@ -245,9 +227,6 @@
             "projectReferences": {
               "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Data.EF.Models\\WebAPI.Data.EF.Models.csproj": {
                 "projectPath": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Data.EF.Models\\WebAPI.Data.EF.Models.csproj"
-              },
-              "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Employee.Models\\WebAPI.Models.csproj": {
-                "projectPath": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Employee.Models\\WebAPI.Models.csproj"
               }
             }
           }

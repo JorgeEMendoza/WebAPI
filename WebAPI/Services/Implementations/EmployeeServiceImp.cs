@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WebAPI.Models;
-using WebAPI.Repositories.Contracts;
+using WebAPI.Data.EF.Models;
+using WebAPI.Repositories;
 using WebAPI.Web.Services.Contracts;
 
 namespace WebAPI.Web.Services.Implementations
@@ -17,18 +17,18 @@ namespace WebAPI.Web.Services.Implementations
             _empRepo = empRepo;
         }
 
-        public async Task<Employee> GetEmployeeAsync(int employeeID) => await _empRepo.GetById(employeeID);
+        public async Task<EmployeeDataModel> GetEmployeeAsync(int employeeID) => await _empRepo.GetEmployeeById(employeeID);
 
-        public async Task<IReadOnlyCollection<Employee>> GetAllEmployeesAsync() => await _empRepo.GetAllEmployees();
+        public async Task<IReadOnlyCollection<EmployeeDataModel>> GetAllEmployeesAsync() => await _empRepo.GetAllEmployees();
 
-        public async Task<List<Employee>> GetRandomEmployeesAsync(int numberOfRandomEmployees)
+        public async Task<IReadOnlyCollection<EmployeeDataModel>> GetRandomEmployeesAsync(int numberOfRandomEmployees)
         {
             var rand = new Random();
-            List<Employee> employees = await _empRepo.GetAllEmployees();
+            IReadOnlyCollection<EmployeeDataModel> employees = await _empRepo.GetAllEmployees();
 
             return employees.OrderBy(x => rand.Next()).Take(numberOfRandomEmployees).ToList();
         }
 
-        public async Task Create(Employee employee) => await _empRepo.Create(employee);
+        public async Task Create(EmployeeDataModel employee) => await _empRepo.Create(employee);
     }
 }

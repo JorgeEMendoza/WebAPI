@@ -1,11 +1,12 @@
-﻿using WebAPI.Models;
+﻿using WebAPI.Data.EF.Models;
+using WebAPI.Models;
 
 namespace WebAPI.Web.DataMapping.Contracts
 {
     public interface IEmployeeMapper
     {
-/*        Employee Map<TModel>(TModel model) where TModel : CreateEmployeeModel;
+        EmployeeDataModel Map<TModel>(TModel model) where TModel : CreateEmployeeModel;
 
-        Employee MapEmployee<TModel>(TModel model) where TModel : Employee;*/
+        Employee MapEmployee<TModel>(TModel model) where TModel : EmployeeDataModel;
     }
 }

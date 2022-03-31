@@ -1,0 +1,4 @@
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Data.EF.Models\obj\Debug\netcoreapp3.1\WebAPI.Data.EF.Models.csprojAssemblyReference.cache
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Data.EF.Models\obj\Debug\netcoreapp3.1\WebAPI.Data.EF.Models.MvcApplicationPartsAssemblyInfo.cache
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Data.EF.Models\obj\Debug\netcoreapp3.1\WebAPI.Data.EF.Models.AssemblyInfoInputs.cache
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Data.EF.Models\obj\Debug\netcoreapp3.1\WebAPI.Data.EF.Models.AssemblyInfo.cs

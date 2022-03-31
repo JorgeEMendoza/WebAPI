@@ -1493,19 +1493,13 @@
       },
       "WebAPI.Data.EF.Models/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.9.10"
-        },
+        "framework": ".NETStandard,Version=v2.0",
         "compile": {
           "bin/placeholder/WebAPI.Data.EF.Models.dll": {}
         },
         "runtime": {
           "bin/placeholder/WebAPI.Data.EF.Models.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       }
     }
   },

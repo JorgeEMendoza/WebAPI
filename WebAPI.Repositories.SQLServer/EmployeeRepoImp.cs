@@ -2,41 +2,38 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WebAPI.Web.DataMapping.Contracts;
 using WebAPI.Models.Context;
 using WebAPI.Models;
-using WebAPI.Repositories.Contracts;
+using WebAPI.Data.EF.Models;
 
 namespace WebAPI.Repositories.Implementations
 {
-    public class EmployeeRepoImp : RepositoryImp<Employee_Main>, IEmployeeRepo
+    public class EmployeeRepoImp : RepositoryImp<Employee>, IEmployeeRepo
     {
         private readonly SQLDBContext _context;
         public EmployeeRepoImp(SQLDBContext _context) : base(_context)
         {
             this._context = _context;
         }
-        public async Task<List<Employee>> GetAllEmployees() => await Task.Run(() => 
+
+        public async Task<EmployeeDataModel> GetEmployeeById(int employeeId) => await Task.Run(() => _context.Employee.Where(x => x.Id == employeeId).FirstOrDefault());
+        public async Task<IReadOnlyCollection<EmployeeDataModel>> GetAllEmployees() => await Task.Run(() => 
         {
-            List<Employee> employees = _context.Employee.Where(x => x.ID < 11).ToList();
+            List<EmployeeDataModel> employees = _context.Employee.Where(x => x.Id < 11).ToList();
             
             return employees; 
         });
 
-        public Task<IReadOnlyCollection<Employee>> GetSomeEmployees()
+        public Task<IReadOnlyCollection<EmployeeDataModel>> GetSomeEmployees()
         {
             throw new NotImplementedException();
         }
 
-        public async Task Create(Employee employee) => await Task.Run(() =>
+        public async Task Create(EmployeeDataModel employee) => await Task.Run(() =>
         {
             _context.Employee.Add(employee);
             _context.SaveChanges();
         });
 
-        Task<Employee> IRepository<Employee>.GetById(int ID)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -1,0 +1,15 @@
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Repositories\obj\Debug\netcoreapp3.1\WebAPI.Repositories.csprojAssemblyReference.cache
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Repositories\obj\Debug\netcoreapp3.1\WebAPI.Repositories.AssemblyInfoInputs.cache
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Repositories\obj\Debug\netcoreapp3.1\WebAPI.Repositories.AssemblyInfo.cs
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Repositories\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Repositories\bin\Debug\netcoreapp3.1\WebAPI.Repositories.deps.json
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Repositories\bin\Debug\netcoreapp3.1\WebAPI.Repositories.dll
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Repositories\bin\Debug\netcoreapp3.1\WebAPI.Repositories.pdb
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Repositories\bin\Debug\netcoreapp3.1\WebAPI.Data.EF.Models.dll
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Repositories\bin\Debug\netcoreapp3.1\WebAPI.Data.EF.Models.pdb
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Repositories\obj\Debug\netcoreapp3.1\WebAPI.Repositories.RazorTargetAssemblyInfo.cache
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Repositories\obj\Debug\netcoreapp3.1\WebAPI.Repositories.csproj.CopyComplete
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Repositories\obj\Debug\netcoreapp3.1\staticwebassets\WebAPI.Repositories.StaticWebAssets.Manifest.cache
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Repositories\obj\Debug\netcoreapp3.1\staticwebassets\WebAPI.Repositories.StaticWebAssets.xml
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Repositories\obj\Debug\netcoreapp3.1\WebAPI.Repositories.dll
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Repositories\obj\Debug\netcoreapp3.1\WebAPI.Repositories.pdb

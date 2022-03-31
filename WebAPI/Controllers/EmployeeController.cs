@@ -5,6 +5,7 @@ using WebAPI.Web.DataMapping.Contracts;
 using WebAPI.Web.Services.Contracts;
 using WebAPI.Models;
 using static WebAPI.Web.Controllers.RoutingHelpers;
+using WebAPI.Data.EF.Models;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -26,21 +27,49 @@ namespace WebAPI.Web.Controllers
 
         [HttpGet]
         [Route("Employee/{empID}")]
-        public async Task<Employee> GetEmployeeById(int empID) => await Task.Run(() => { return _employeeService.GetEmployeeAsync(empID); });
+        public async Task<Employee> GetEmployeeById(int empID)
+        {
+            return _mapper.MapEmployee(await Task.Run(() => _employeeService.GetEmployeeAsync(empID))); 
+        }
 
         [HttpGet]
         [Route("Employees")]
-        public async Task<IReadOnlyCollection<Employee>> GetAllEmployees() => await Task.Run(() => { return _employeeService.GetAllEmployeesAsync(); });
+        public async Task<IReadOnlyCollection<Employee>> GetAllEmployees()
+        {
+            IReadOnlyCollection<EmployeeDataModel> employees = await Task.Run(() => _employeeService.GetAllEmployeesAsync());
+            List<Employee> allEmployees = new List<Employee>();
+
+            foreach (var employee in employees)
+            {
+                var newEmployee = _mapper.MapEmployee(employee);
+                allEmployees.Add(newEmployee);
+            }
+
+            return allEmployees;
+        }
 
         [HttpGet]
         [Route("Get10RandomEmployees")]
-        public async Task<List<Employee>> GetSomeEmployees() => await Task.Run(() => { return _employeeService.GetRandomEmployeesAsync(10); });
+        public async Task<IReadOnlyCollection<Employee>> GetSomeEmployees()
+        { 
+            IReadOnlyCollection<EmployeeDataModel> someEmployees = await Task.Run(() => _employeeService.GetRandomEmployeesAsync(10));
+            List<Employee> top10Employees = new List<Employee>();
+
+            foreach (var employee in someEmployees)
+            {
+                var newEmployee = _mapper.MapEmployee(employee);
+                top10Employees.Add(newEmployee);
+            }
+
+            return top10Employees;
+
+        }
 
         [HttpPost]
         [Route("CreateEmployee")]
         public async Task CreateEmployee(CreateEmployeeModel employee) => await Task.Run(() =>
         {
-            Employee newEmployee = _mapper.Map(employee);
+            EmployeeDataModel newEmployee = _mapper.Map(employee);
             return _employeeService.Create(newEmployee);
             
         });

@@ -1,26 +1,27 @@
 ﻿using WebAPI.Web.DataMapping.Contracts;
 using WebAPI.Models;
+using WebAPI.Data.EF.Models;
 
 namespace WebAPI.Web.DataMapping.Implementations
 {
     public sealed class EmployeeMapper : IEmployeeMapper
     {
-     /*   public Employee Map<TModel>(TModel model)
+        public EmployeeDataModel Map<TModel>(TModel model)
             where TModel : CreateEmployeeModel =>
-            new Employee
+            new EmployeeDataModel
             {
                 FirstName = model.FirstName,
                 LastName = model.LastName
             };
 
         public Employee MapEmployee<TModel>(TModel model)
-            where TModel : Employee =>
+            where TModel : EmployeeDataModel =>
             new Employee
             {
-                Id = model.ID,
                 FirstName = model.FirstName,
-                LastName = model.LastName
-                
-            };*/
+                LastName = model.LastName,
+                DateOfBirth = model.BirthDate
+
+            };
     }
 }

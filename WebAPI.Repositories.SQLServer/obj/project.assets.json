@@ -353,12 +353,6 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.9.10": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.Win32.Registry/4.5.0": {
         "type": "package",
         "dependencies": {
@@ -1476,42 +1470,29 @@
       },
       "WebAPI.Data.EF.Models/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.9.10"
-        },
+        "framework": ".NETStandard,Version=v2.0",
         "compile": {
           "bin/placeholder/WebAPI.Data.EF.Models.dll": {}
         },
         "runtime": {
           "bin/placeholder/WebAPI.Data.EF.Models.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "WebAPI.Models/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "3.1.23"
-        },
+        "framework": ".NETStandard,Version=v2.0",
         "compile": {
           "bin/placeholder/WebAPI.Models.dll": {}
         },
         "runtime": {
           "bin/placeholder/WebAPI.Models.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "WebAPI.Repositories/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "WebAPI.Data.EF.Models": "1.0.0",
-          "WebAPI.Models": "1.0.0"
+          "WebAPI.Data.EF.Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/WebAPI.Repositories.dll": {}
@@ -2118,69 +2099,6 @@
         "microsoft.netcore.targets.1.1.0.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
-      ]
-    },
-    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.9.10": {
-      "sha512": "d5/5CDc4TAjrgO9oyyj+FHUDVumxgrlCMJqDtUX4GyTnr1Q/BP88PhnVunRZ9AQcL2UQkM4EkRNyFelPXunHtw==",
-      "type": "package",
-      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.9.10",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "EULA.md",
-        "build/Container.props",
-        "build/Container.targets",
-        "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props",
-        "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.targets",
-        "build/ToolsTarget.props",
-        "build/ToolsTarget.targets",
-        "microsoft.visualstudio.azure.containers.tools.targets.1.9.10.nupkg.sha512",
-        "microsoft.visualstudio.azure.containers.tools.targets.nuspec",
-        "tools/Microsoft.VisualStudio.Containers.Tools.Common.dll",
-        "tools/Microsoft.VisualStudio.Containers.Tools.Shared.dll",
-        "tools/Microsoft.VisualStudio.Containers.Tools.Tasks.dll",
-        "tools/Newtonsoft.Json.dll",
-        "tools/cs/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/cs/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/cs/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/de/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/de/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/de/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/es/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/es/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/es/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/fr/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/fr/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/fr/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/it/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/it/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/it/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/ja/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/ja/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/ja/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/ko/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/ko/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/ko/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/pl/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/pl/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/pl/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/pt-BR/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/pt-BR/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/pt-BR/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/ru/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/ru/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/ru/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/tr/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/tr/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/tr/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/utils/KillProcess.exe",
-        "tools/zh-Hans/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/zh-Hans/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/zh-Hans/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/zh-Hant/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/zh-Hant/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/zh-Hant/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll"
       ]
     },
     "Microsoft.Win32.Registry/4.5.0": {
@@ -5769,8 +5687,8 @@
     },
     "WebAPI.Models/1.0.0": {
       "type": "project",
-      "path": "../WebAPI.Employee.Models/WebAPI.Models.csproj",
-      "msbuildProject": "../WebAPI.Employee.Models/WebAPI.Models.csproj"
+      "path": "../WebAPI.Models/WebAPI.Models.csproj",
+      "msbuildProject": "../WebAPI.Models/WebAPI.Models.csproj"
     },
     "WebAPI.Repositories/1.0.0": {
       "type": "project",
@@ -5817,8 +5735,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Employee.Models\\WebAPI.Models.csproj": {
-              "projectPath": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Employee.Models\\WebAPI.Models.csproj"
+            "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Models\\WebAPI.Models.csproj": {
+              "projectPath": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Models\\WebAPI.Models.csproj"
             },
             "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Repositories\\WebAPI.Repositories.csproj": {
               "projectPath": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Repositories\\WebAPI.Repositories.csproj"

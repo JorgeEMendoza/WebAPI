@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WebAPI.Models.Context;
-using WebAPI.Repositories.Contracts;
+using WebAPI.Repositories;
 using WebAPI.Repositories.Implementations;
 using WebAPI.Web.Services.Contracts;
 using WebAPI.Web.Services.Implementations;
@@ -36,14 +36,13 @@ namespace WebAPI.Web
                 AddDbContext<SQLDBContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly(typeof(SQLDBContext).Assembly.FullName))).
                 AddScoped<IEmployeeService, EmployeeServiceImp>().
-                AddScoped(typeof(IRepository<>), typeof(RepositoryImp<>)).
                 AddScoped<IEmployeeRepo, EmployeeRepoImp>().
                 AddSingleton<IEmployeeMapper, EmployeeMapper>();
 
             // Swagger
             services.AddSwaggerGen(options =>
             {
-                options.SwaggerDoc($"v{RoutingHelpers.APIVersion}",
+                options.SwaggerDoc(RoutingHelpers.APIVersion,
                                     new OpenApiInfo 
                                     { 
                                         Title = "Employees",
