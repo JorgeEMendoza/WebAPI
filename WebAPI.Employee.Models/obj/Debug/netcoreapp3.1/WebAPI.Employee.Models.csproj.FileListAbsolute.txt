@@ -1,0 +1,9 @@
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Employee.Models\bin\Debug\netcoreapp3.1\appsettings.Development.json
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Employee.Models\bin\Debug\netcoreapp3.1\appsettings.json
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Employee.Models\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Employee.Models\obj\Debug\netcoreapp3.1\WebAPI.Employee.Models.csprojAssemblyReference.cache
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Employee.Models\obj\Debug\netcoreapp3.1\WebAPI.Employee.Models.AssemblyInfoInputs.cache
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Employee.Models\obj\Debug\netcoreapp3.1\WebAPI.Employee.Models.AssemblyInfo.cs
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Employee.Models\obj\Debug\netcoreapp3.1\WebAPI.Employee.Models.RazorTargetAssemblyInfo.cache
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Employee.Models\obj\Debug\netcoreapp3.1\staticwebassets\WebAPI.Employee.Models.StaticWebAssets.Manifest.cache
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Employee.Models\obj\Debug\netcoreapp3.1\staticwebassets\WebAPI.Employee.Models.StaticWebAssets.xml

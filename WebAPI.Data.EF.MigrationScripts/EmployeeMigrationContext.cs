@@ -1,0 +1,61 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using WebAPI.Data.EF.Models;
+
+namespace WebAPI.Data.EF.MigrationScripts
+{
+    public class EmployeeMigrationContext : DbContext
+    {
+        public IConfiguration Configuration { get; }
+        public virtual DbSet<EmployeeDataModel> Employees { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<EmployeeDataModel>(entity =>
+            {
+                entity.ToTable("employees");
+
+                entity.Property(e => e.FirstName)
+                    .IsRequired()
+                    .HasMaxLength(25)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.LastName)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.BirthDate).HasColumnType("datetime");
+            });
+
+            modelBuilder.Entity<PhoneNumberDataModel>(entity =>
+            {
+                entity.ToTable("phonenumbers");
+
+                entity.HasOne(d => d.Employee)
+                    .WithMany(p => p.PhoneNumbers)
+                    .HasForeignKey(d => d.EmployeeId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("EmployeePhoneNumberIdFK");
+            });
+
+            modelBuilder.Entity<AddressDataModel>(entity =>
+            {
+                entity.ToTable("addresses");
+
+                entity.HasOne(d => d.Employee)
+                    .WithMany(p => p.Addresses)
+                    .HasForeignKey(d => d.EmployeeId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("EmployeeAddressIdFK");
+                
+            
+            });
+        }
+
+    }
+}

@@ -1,29 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using WebAPI.DataMapping.Contracts;
-using WebAPI.Models.Employee;
+﻿using WebAPI.Web.DataMapping.Contracts;
+using WebAPI.Models;
 
-namespace WebAPI.DataMapping.Implementations
+namespace WebAPI.Web.DataMapping.Implementations
 {
     public sealed class EmployeeMapper : IEmployeeMapper
     {
-        public Employee_Main Map<TModel>(TModel model)
+     /*   public Employee Map<TModel>(TModel model)
             where TModel : CreateEmployeeModel =>
-            new Employee_Main
+            new Employee
             {
-                EMP_FirstName = model.FirstName,
-                EMP_LastName = model.LastName
+                FirstName = model.FirstName,
+                LastName = model.LastName
             };
 
-        public Employee_Main MapEmployee<TModel>(TModel model)
+        public Employee MapEmployee<TModel>(TModel model)
             where TModel : Employee =>
-            new Employee_Main
+            new Employee
             {
-                Emp_ID = model.ID,
-                EMP_FirstName = model.FirstName,
-                EMP_LastName = model.LastName
-            };
+                Id = model.ID,
+                FirstName = model.FirstName,
+                LastName = model.LastName
+                
+            };*/
     }
 }

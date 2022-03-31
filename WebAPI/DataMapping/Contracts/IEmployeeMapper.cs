@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using WebAPI.Models.Employee;
+﻿using WebAPI.Models;
 
-namespace WebAPI.DataMapping.Contracts
+namespace WebAPI.Web.DataMapping.Contracts
 {
     public interface IEmployeeMapper
     {
-        Employee_Main Map<TModel>(TModel model) where TModel : CreateEmployeeModel;
+/*        Employee Map<TModel>(TModel model) where TModel : CreateEmployeeModel;
 
-        Employee_Main MapEmployee<TModel>(TModel model) where TModel : Employee;
+        Employee MapEmployee<TModel>(TModel model) where TModel : Employee;*/
     }
 }

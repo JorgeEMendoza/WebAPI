@@ -1,28 +1,22 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using WebAPI.Models.Context;
 using WebAPI.Repositories.Contracts;
 using WebAPI.Repositories.Implementations;
-using WebAPI.Services.Contracts;
-using WebAPI.Services.Implementations;
-using WebAPI.Controllers;
+using WebAPI.Web.Services.Contracts;
+using WebAPI.Web.Services.Implementations;
+using WebAPI.Web.Controllers;
 using Microsoft.OpenApi.Models;
 using System.Text.Json.Serialization;
-using WebAPI.DataMapping.Contracts;
-using WebAPI.DataMapping.Implementations;
+using WebAPI.Web.DataMapping.Contracts;
+using WebAPI.Web.DataMapping.Implementations;
 
-namespace WebAPI
+namespace WebAPI.Web
 {
     public class Startup
     {
@@ -49,7 +43,12 @@ namespace WebAPI
             // Swagger
             services.AddSwaggerGen(options =>
             {
-                options.SwaggerDoc(RoutingHelpers.APIVersion, new OpenApiInfo { Title = "Courses", Version = RoutingHelpers.APIVersion });
+                options.SwaggerDoc($"v{RoutingHelpers.APIVersion}",
+                                    new OpenApiInfo 
+                                    { 
+                                        Title = "Employees",
+                                        Version = RoutingHelpers.APIVersion 
+                                    });
             });
 
             services.AddApiVersioning(o =>
