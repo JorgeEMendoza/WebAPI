@@ -10,7 +10,7 @@ using WebAPI.Data.EF.MigrationScripts;
 namespace WebAPI.Data.EF.MigrationScripts.Migrations
 {
     [DbContext(typeof(EmployeeMigrationContext))]
-    [Migration("20220404000100_InitialCreate")]
+    [Migration("20220404054954_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

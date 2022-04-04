@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = WebAPI.Data.EF.Models
+build_property.ProjectDir = /Users/jem/Desktop/DEV/WebAPI/WebAPI.Data.EF.Models/

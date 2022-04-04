@@ -34,7 +34,7 @@ namespace WebAPI.Web
 
             services.
                 AddDbContext<SQLDBContext>(options =>
-                    options.UseSqlServer("Server=192.168.2.220; Database=employeesdb; User Id=employeesdb_user; Password=Pa$$word_!@#$", b => b.MigrationsAssembly(typeof(SQLDBContext).Assembly.FullName))).
+                    options.UseSqlServer("Server=localhost; Database=employeesdb; User Id=sa; Password=ROOTPASS_4_me", b => b.MigrationsAssembly(typeof(SQLDBContext).Assembly.FullName))).
                 AddScoped<IEmployeeService, EmployeeServiceImp>().
                 AddScoped<IEmployeeRepo, EmployeeRepoImp>().
                 AddSingleton<IEmployeeMapper, EmployeeMapper>();

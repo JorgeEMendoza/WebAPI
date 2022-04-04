@@ -14,7 +14,8 @@ namespace WebAPI.Data.EF.MigrationScripts
         {
             //optionsBuilder.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             //"Server=192.168.2.220; Database=employeesdb; User Id=employeesdb_user; Password=Pa$$word_!@#$"
-            optionsBuilder.UseSqlServer("Server=192.168.2.220; Database=employeesdb; User Id=employeesdb_user; Password=Pa$$word_!@#$");
+            //optionsBuilder.UseSqlServer("Server=192.168.2.220; Database=employeesdb; User Id=employeesdb_user; Password=Pa$$word_!@#$");
+            optionsBuilder.UseSqlServer("Server=localhost; Database=employeesdb; User Id=sa; Password=ROOTPASS_4_me");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
