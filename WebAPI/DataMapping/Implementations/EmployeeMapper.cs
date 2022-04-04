@@ -11,13 +11,15 @@ namespace WebAPI.Web.DataMapping.Implementations
             new EmployeeDataModel
             {
                 FirstName = model.FirstName,
-                LastName = model.LastName
+                LastName = model.LastName,
+                BirthDate = model.DateOfBirth
             };
 
         public Employee MapEmployee<TModel>(TModel model)
             where TModel : EmployeeDataModel =>
             new Employee
             {
+                Id = model.Id,
                 FirstName = model.FirstName,
                 LastName = model.LastName,
                 DateOfBirth = model.BirthDate

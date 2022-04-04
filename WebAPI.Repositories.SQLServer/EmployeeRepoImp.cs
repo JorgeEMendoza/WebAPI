@@ -16,10 +16,10 @@ namespace WebAPI.Repositories.Implementations
             this._context = _context;
         }
 
-        public async Task<EmployeeDataModel> GetEmployeeById(int employeeId) => await Task.Run(() => _context.Employee.Where(x => x.Id == employeeId).FirstOrDefault());
+        public async Task<EmployeeDataModel> GetEmployeeById(int employeeId) => await Task.Run(() => _context.employees.Where(x => x.Id == employeeId).FirstOrDefault());
         public async Task<IReadOnlyCollection<EmployeeDataModel>> GetAllEmployees() => await Task.Run(() => 
         {
-            List<EmployeeDataModel> employees = _context.Employee.Where(x => x.Id < 11).ToList();
+            List<EmployeeDataModel> employees = _context.employees.Where(x => x.Id < 11).ToList();
             
             return employees; 
         });
@@ -31,7 +31,7 @@ namespace WebAPI.Repositories.Implementations
 
         public async Task Create(EmployeeDataModel employee) => await Task.Run(() =>
         {
-            _context.Employee.Add(employee);
+            _context.employees.Add(employee);
             _context.SaveChanges();
         });
 

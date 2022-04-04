@@ -8,9 +8,13 @@ namespace WebAPI.Data.EF.MigrationScripts
     {
         public IConfiguration Configuration { get; }
         public virtual DbSet<EmployeeDataModel> Employees { get; set; }
+        public virtual DbSet<PhoneNumberDataModel> PhoneNumber { get; set; }
+        public virtual DbSet<AddressDataModel> Addresses { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+            //optionsBuilder.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+            //"Server=192.168.2.220; Database=employeesdb; User Id=employeesdb_user; Password=Pa$$word_!@#$"
+            optionsBuilder.UseSqlServer("Server=192.168.2.220; Database=employeesdb; User Id=employeesdb_user; Password=Pa$$word_!@#$");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -34,7 +38,7 @@ namespace WebAPI.Data.EF.MigrationScripts
 
             modelBuilder.Entity<PhoneNumberDataModel>(entity =>
             {
-                entity.ToTable("phonenumbers");
+                entity.ToTable("phone_numbers");
 
                 entity.HasOne(d => d.Employee)
                     .WithMany(p => p.PhoneNumbers)
@@ -52,9 +56,9 @@ namespace WebAPI.Data.EF.MigrationScripts
                     .HasForeignKey(d => d.EmployeeId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("EmployeeAddressIdFK");
-                
-            
             });
+
+            //DbInitializer.Initialize(this);
         }
 
     }

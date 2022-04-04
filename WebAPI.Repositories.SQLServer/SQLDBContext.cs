@@ -10,7 +10,7 @@ namespace WebAPI.Models.Context
             
         }
 
-        public DbSet<EmployeeDataModel> Employee { get; set; }
+        public DbSet<EmployeeDataModel> employees { get; set; }
 
     }
 }

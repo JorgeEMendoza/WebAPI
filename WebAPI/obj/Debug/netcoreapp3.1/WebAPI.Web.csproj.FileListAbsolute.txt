@@ -94,3 +94,4 @@
 \\Mac\Home\Desktop\DEV\WebAPI\WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\WebAPI.Web.StaticWebAssets.xml
 \\Mac\Home\Desktop\DEV\WebAPI\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.Web.dll
 \\Mac\Home\Desktop\DEV\WebAPI\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.Web.pdb
+\\Mac\Home\Desktop\DEV\WebAPI\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.Web.MvcApplicationPartsAssemblyInfo.cs

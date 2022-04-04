@@ -7,15 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI.Web", "WebAPI\WebAPI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI.Web.Tests", "WebAPI.Tests\WebAPI.Web.Tests.csproj", "{4E5674F8-63BA-4CB7-8942-B0FD164A5228}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI.Data.EF.MigrationScripts", "WebAPI.Data.EF.MigrationScripts\WebAPI.Data.EF.MigrationScripts.csproj", "{F24AAE04-E37B-4014-80EF-E51569BDA573}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI.Data.EF.MigrationScripts", "WebAPI.Data.EF.MigrationScripts\WebAPI.Data.EF.MigrationScripts.csproj", "{F24AAE04-E37B-4014-80EF-E51569BDA573}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI.Repositories", "WebAPI.Repositories\WebAPI.Repositories.csproj", "{0FEAFF8E-840C-4912-AA69-20C79B6B0669}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI.Repositories", "WebAPI.Repositories\WebAPI.Repositories.csproj", "{0FEAFF8E-840C-4912-AA69-20C79B6B0669}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI.Repositories.SQLServer", "WebAPI.Repositories.SQLServer\WebAPI.Repositories.SQLServer.csproj", "{BABB3873-D69B-4ACD-9E72-5C4FDE7E3897}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI.Repositories.SQLServer", "WebAPI.Repositories.SQLServer\WebAPI.Repositories.SQLServer.csproj", "{BABB3873-D69B-4ACD-9E72-5C4FDE7E3897}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI.Models", "WebAPI.Models\WebAPI.Models.csproj", "{4909CB5E-C2F9-4EB7-98D5-EB77D37B6408}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI.Models", "WebAPI.Models\WebAPI.Models.csproj", "{4909CB5E-C2F9-4EB7-98D5-EB77D37B6408}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI.Data.EF.Models", "WebAPI.Data.EF.Models\WebAPI.Data.EF.Models.csproj", "{617CEABE-4059-482D-8722-B9446663EF2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI.Data.EF.Models", "WebAPI.Data.EF.Models\WebAPI.Data.EF.Models.csproj", "{617CEABE-4059-482D-8722-B9446663EF2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

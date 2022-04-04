@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "fF+lVLOudonKtb6ljpP7pEhFDqQUXe/M1bmhPEvI49OAYvh3sjYlx7TIGFTMyJT5k9tL2OaRYJWNeyWalBV3rw==",
+  "success": true,
+  "projectFilePath": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Data.EF.Models\\WebAPI.Data.EF.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jem\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\jem\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

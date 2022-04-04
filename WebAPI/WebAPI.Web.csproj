@@ -33,5 +33,9 @@
     <ProjectReference Include="..\WebAPI.Repositories\WebAPI.Repositories.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
 
 </Project>
