@@ -28,6 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WebAPI.Data.EF.Models\WebAPI.Data.EF.Models.csproj" />
     <ProjectReference Include="..\WebAPI.Models\WebAPI.Models.csproj" />
     <ProjectReference Include="..\WebAPI.Repositories.SQLServer\WebAPI.Repositories.SQLServer.csproj" />
     <ProjectReference Include="..\WebAPI.Repositories\WebAPI.Repositories.csproj" />

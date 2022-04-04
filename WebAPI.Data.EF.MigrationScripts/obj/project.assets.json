@@ -5773,38 +5773,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jem\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/jem/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Data.EF.MigrationScripts\\WebAPI.Data.EF.MigrationScripts.csproj",
+      "projectUniqueName": "/Users/jem/Desktop/DEV/WebAPI/WebAPI.Data.EF.MigrationScripts/WebAPI.Data.EF.MigrationScripts.csproj",
       "projectName": "WebAPI.Data.EF.MigrationScripts",
-      "projectPath": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Data.EF.MigrationScripts\\WebAPI.Data.EF.MigrationScripts.csproj",
-      "packagesPath": "C:\\Users\\jem\\.nuget\\packages\\",
-      "outputPath": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Data.EF.MigrationScripts\\obj\\",
+      "projectPath": "/Users/jem/Desktop/DEV/WebAPI/WebAPI.Data.EF.MigrationScripts/WebAPI.Data.EF.MigrationScripts.csproj",
+      "packagesPath": "/Users/jem/.nuget/packages/",
+      "outputPath": "/Users/jem/Desktop/DEV/WebAPI/WebAPI.Data.EF.MigrationScripts/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\jem\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/jem/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Data.EF.Models\\WebAPI.Data.EF.Models.csproj": {
-              "projectPath": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Data.EF.Models\\WebAPI.Data.EF.Models.csproj"
+            "/Users/jem/Desktop/DEV/WebAPI/WebAPI.Data.EF.Models/WebAPI.Data.EF.Models.csproj": {
+              "projectPath": "/Users/jem/Desktop/DEV/WebAPI/WebAPI.Data.EF.Models/WebAPI.Data.EF.Models.csproj"
             }
           }
         }
@@ -5817,6 +5811,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
@@ -5855,7 +5850,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.112\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.406/RuntimeIdentifierGraph.json"
       }
     }
   }

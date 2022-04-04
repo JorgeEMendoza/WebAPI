@@ -1,7 +1,8 @@
+/Users/jem/Desktop/DEV/WebAPI/WebAPI.Models/obj/Debug/netstandard2.0/WebAPI.Models.dll
+/Users/jem/Desktop/DEV/WebAPI/WebAPI.Models/obj/Debug/netstandard2.0/WebAPI.Models.pdb
 \\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Models\bin\Debug\netstandard2.0\WebAPI.Models.deps.json
 \\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Models\bin\Debug\netstandard2.0\WebAPI.Models.dll
 \\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Models\bin\Debug\netstandard2.0\WebAPI.Models.pdb
-\\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Models\obj\Debug\netstandard2.0\WebAPI.Models.csprojAssemblyReference.cache
 \\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Models\obj\Debug\netstandard2.0\WebAPI.Models.AssemblyInfoInputs.cache
 \\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Models\obj\Debug\netstandard2.0\WebAPI.Models.AssemblyInfo.cs
 \\Mac\Home\Desktop\DEV\WebAPI\WebAPI.Models\obj\Debug\netstandard2.0\WebAPI.Models.dll

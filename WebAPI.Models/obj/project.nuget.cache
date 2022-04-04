@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UdA4sJE/fDAByrpx8CXk6+MaGQF1f2pXvgRn09itPBfn1mODZVdO5DcT11uGtKer2JdCE/M6/ZpgeMVeSABMSg==",
+  "dgSpecHash": "e/D7tGNduWtJM7Y1sorsCwxqO/OE5oiVsgeY9CFjjKt6+EABSu1pW6v2d3vwpLWwnUeOJSrpvTzSq9A6QkyntA==",
   "success": true,
-  "projectFilePath": "/Users/jem/Desktop/DEV/WebAPI/WebAPI.Data.EF.Models/WebAPI.Data.EF.Models.csproj",
+  "projectFilePath": "/Users/jem/Desktop/DEV/WebAPI/WebAPI.Models/WebAPI.Models.csproj",
   "expectedPackageFiles": [
     "/Users/jem/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/Users/jem/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"

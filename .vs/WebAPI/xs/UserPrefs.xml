@@ -1,48 +1,32 @@
-﻿<Properties StartupConfiguration="{29EB1AA3-B320-4F8F-968F-4540F05EFAA3}|Default">
+﻿<Properties StartupConfiguration="{29EB1AA3-B320-4F8F-968F-4540F05EFAA3}|WebAPI">
   <MonoDevelop.Ide.ItemProperties.WebAPI PreferredExecutionTarget="/Applications/Firefox.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebAPI/Properties/launchSettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebAPI/Controllers/EmployeeController.cs">
     <Files>
-      <File FileName="WebAPI/Controllers/EmployeeController.cs" Line="37" Column="120" />
-      <File FileName="WebAPI/Repositories/Implementations/EmployeeRepoImp.cs" Line="25" Column="33" />
-      <File FileName="WebAPI/Repositories/Contracts/IEmployeeRepo.cs" Line="13" Column="28" />
-      <File FileName="WebAPI.Tests/Controllers/Create_New_Employee_Controller.cs" Line="8" Column="71" />
-      <File FileName="WebAPI/Models/Employee/Employee.cs" Line="22" Column="35" />
-      <File FileName="WebAPI/Models/Employee/Employee_Main.cs" Line="1" Column="1" />
-      <File FileName="WebAPI/Services/Contracts/IEmployee.cs" Line="15" Column="27" />
-      <File FileName="WebAPI/Services/Implementations/EmployeeImp.cs" Line="32" Column="33" />
-      <File FileName="WebAPI/Repositories/Contracts/IRepository.cs" Line="1" Column="1" />
+      <File FileName="WebAPI/Controllers/EmployeeController.cs" Line="27" Column="1" />
+      <File FileName="WebAPI.Tests/Controllers/Create_New_Employee_Controller.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WebAPI" expanded="True">
-            <Node name="WebAPI" expanded="True" selected="True">
+            <Node name="WebAPI.Web" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="Employee" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="EmployeeController.cs" selected="True" />
+              </Node>
+              <Node name="DataMapping" expanded="True">
+                <Node name="Contracts" expanded="True" />
+                <Node name="Implementations" expanded="True" />
               </Node>
               <Node name="Properties" expanded="True" />
-              <Node name="Repositories" expanded="True">
-                <Node name="Contracts" expanded="True" />
-                <Node name="Implementations" expanded="True" />
-              </Node>
-              <Node name="Services" expanded="True">
-                <Node name="Contracts" expanded="True" />
-                <Node name="Implementations" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="WebAPI.Tests" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="ProjectDependencies" expanded="True" />
-              </Node>
-              <Node name="Controllers" expanded="True" />
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.WebAPI.Web PreferredExecutionTarget="/Applications/Firefox.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.WebAPI.Tests FirstBuild="True" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

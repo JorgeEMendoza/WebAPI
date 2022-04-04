@@ -2851,6 +2851,7 @@
           "Swashbuckle": "5.6.0",
           "Swashbuckle.AspNetCore.SwaggerGen": "6.2.2",
           "Swashbuckle.AspNetCore.SwaggerUI": "6.2.2",
+          "WebAPI.Data.EF.Models": "1.0.0",
           "WebAPI.Models": "1.0.0",
           "WebAPI.Repositories": "1.0.0",
           "WebAPI.Repositories.SQLServer": "1.0.0"

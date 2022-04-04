@@ -288,6 +288,9 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+              "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Data.EF.Models\\WebAPI.Data.EF.Models.csproj": {
+                "projectPath": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Data.EF.Models\\WebAPI.Data.EF.Models.csproj"
+              },
               "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Models\\WebAPI.Models.csproj": {
                 "projectPath": "\\\\Mac\\Home\\Desktop\\DEV\\WebAPI\\WebAPI.Models\\WebAPI.Models.csproj"
               },
